@@ -23,7 +23,7 @@ model = OpenAIChatCompletionsModel(
 
 # Create a RunConfig instance with the model and external client
 config = RunConfig(
-    model=model,, 
+    model=model,
     tracing_disabled=True
     )
 
