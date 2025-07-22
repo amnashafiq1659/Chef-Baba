@@ -1,7 +1,8 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
-from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel, RunConfig, function_tool
+from openai import AsyncOpenAI
+from agents import Agent, Runner, OpenAIChatCompletionsModel, RunConfig, function_tool
 import asyncio
 import requests
 
@@ -22,8 +23,7 @@ model = OpenAIChatCompletionsModel(
 
 # Create a RunConfig instance with the model and external client
 config = RunConfig(
-    model=model,
-    model_provider=external_client, 
+    model=model,, 
     tracing_disabled=True
     )
 
