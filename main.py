@@ -8,10 +8,11 @@ import requests
 
 # Load environment variables from .env file
 load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
 
 # Initialize the agent with the provided configuration
 external_client = AsyncOpenAI(
-    api_key= os.getenv("GEMINI_API_KEY"),
+    api_key= api_key,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
 )
 
