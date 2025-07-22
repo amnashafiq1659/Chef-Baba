@@ -49,7 +49,7 @@ Whether you're a beginner cook or a seasoned foodie, Chef Baba brings AI-powered
 ## 🚀 Live Demo
 
 Try it out live here:
-🔗 
+🔗 https://chef-baba-by-amna-shafiq1659.streamlit.app/
 
 ---
 
